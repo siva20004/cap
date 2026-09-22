@@ -21,7 +21,8 @@ export const Header = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const isHealthy = health?.status === 'HEALTHY';
+  const isHealthy = health?.status === 'HEALTHY' || health?.status?.includes('LIVE') || health?.status?.includes('Cloud');
+
 
   const getUserInitials = () => {
     if (!user) return 'U';
