@@ -254,3 +254,4 @@ python -m pytest backend/tests/test_all_requirements.py -v
 | `GET` | `/api/datasets` | List registered datasets with SHA-256 hashes |
 | `POST` | `/api/datasets/upload` | Upload and hash custom CSV dataset |
 | `GET` | `/api/logs` | Query immutable audit trail logs |
+"# cap" 
