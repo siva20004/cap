@@ -1,0 +1,41 @@
+{
+  "table_name": "orders",
+  "version": "1.0",
+  "description": "E-Commerce daily transaction contract v1.0",
+  "columns": {
+    "order_id": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "nullable": false
+    },
+    "customer_id": {
+      "type": "string",
+      "required": true,
+      "nullable": false
+    },
+    "product_id": {
+      "type": "string",
+      "required": true,
+      "nullable": false
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "minimum": 1,
+      "nullable": false
+    },
+    "price": {
+      "type": "float",
+      "required": true,
+      "minimum": 0.0,
+      "nullable": false
+    },
+    "order_date": {
+      "type": "date",
+      "required": true,
+      "nullable": false,
+      "date_format": "%Y-%m-%d"
+    }
+  }
+}

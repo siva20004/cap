@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+*.egg-info/
+.coverage
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# PostgreSQL Local Cluster
+pg_data/
+*.log
+
+# Large Datasets & Model Artifacts
+ml/models/*.pt
+ml/models/*.pkl
+ml/models/*.joblib
+!ml/models/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/failures/*
+!data/failures/.gitkeep
+data/synthetic/*
+!data/synthetic/.gitkeep
+experiments/results/*.csv
+experiments/graphs/*.png
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
